@@ -1,34 +1,23 @@
-</!DOCTYPE html>
-<html>
-  <head>
-    <link href="css/bootstrap.css" rel="stylesheet"/>
-    <script type="text/javascript" src="js/functions.js"></script>
-    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-    <title>Main</title>
-    <style type="text/css">
-      #more{
-        margin-top: 1000px;
-        margin-bottom: 100px;
-        margin-left: 20px;
-      }
-    </style>
-  </head>
-  <body>
+<!doctype html>
 
-    <div id="top" align="center" style="padding-top: 30px">
-        <form action="" method="post" name="form" id="form">
-            <label for="request"><span style="font-size: 22px; padding: 10px; color: blue";>Find!</span></label>
-            <input type="text" name="request" placeholder="" id="request"/>
-            <input type="button" name="Click" value="Search" onclick="buttonClick(document.getElementById('form'))"/>
-            <p id="field" style="font-size: 17px; padding: 10px;"></p>
-        </form>    
-    </div>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
 
-    <a href="javascript://0" onclick="Scroll('#more')" style="margin-left: 20px; font-size: 15px">Something interesting</a>
-    <div id="more">
-      <span style="font-size: 18px;">Here you are!</span><br><br>
-      <a href="javascript://0" onclick="Scroll('#top')">Go back</a>
-    </div>
+  <title>Random Word</title>
 
-  </body>
+  <link rel="stylesheet" href="css/style.css?v=1.68">
+
+</head>
+
+<body>
+	<div id="push">
+		<div id="mainBlock">
+			<h1 id="word"> ... </h1>
+			<h2 id="translation"> ... </h2>
+		</div>
+	</div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+ 	<script src="js/script.js"></script>
+</body>
 </html>
