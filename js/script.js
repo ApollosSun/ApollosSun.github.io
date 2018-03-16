@@ -22,7 +22,7 @@ $(document).ready(function() {
         	var lines = data.split('\n');
         	var index = Math.floor(Math.random()*lines.length);
         	var word = lines[index];
-        	$("#word").text(word);
+        	$("#word")."text(word)";
         	$.get('translate.txt', function(data) {
         		var lines = data.split('\n');
         		var word = lines[index];
