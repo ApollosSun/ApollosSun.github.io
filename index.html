@@ -1,19 +1,34 @@
-
 </!DOCTYPE html>
 <html>
   <head>
     <link href="css/bootstrap.css" rel="stylesheet"/>
+    <script type="text/javascript" src="js/functions.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <title>Main</title>
+    <style type="text/css">
+      #more{
+        margin-top: 1000px;
+        margin-bottom: 100px;
+        margin-left: 20px;
+      }
+    </style>
   </head>
   <body>
-    <div class="container">
-      <input type="text" name="length" id="length" placeholder="length">
-      <input type="text" name="width" id="width" placeholder="width">
-      <input type="text" name="height" id="height" placeholder="height">
-      <input type="button" name="calculate" onclick="displayResult()" value="calculate">
-      <br>
-      <p id="result"> м.куб</p>
+
+    <div id="top" align="center" style="padding-top: 30px">
+        <form action="" method="post" name="form" id="form">
+            <label for="request"><span style="font-size: 22px; padding: 10px; color: blue";>Find!</span></label>
+            <input type="text" name="request" placeholder="" id="request"/>
+            <input type="button" name="Click" value="Search" onclick="buttonClick(document.getElementById('form'))"/>
+            <p id="field" style="font-size: 17px; padding: 10px;"></p>
+        </form>    
     </div>
-    <script type="text/javascript" src="js/functions.js"></script>
+
+    <a href="javascript://0" onclick="Scroll('#more')" style="margin-left: 20px; font-size: 15px">Something interesting</a>
+    <div id="more">
+      <span style="font-size: 18px;">Here you are!</span><br><br>
+      <a href="javascript://0" onclick="Scroll('#top')">Go back</a>
+    </div>
+
   </body>
 </html>
